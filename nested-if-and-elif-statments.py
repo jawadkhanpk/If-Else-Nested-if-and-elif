@@ -8,7 +8,7 @@ if height >= 120:
 
     age = int(input("What is your age"))
 
-    if age <=12:                            # nested-if start
+    if age <=12:
         bill = 5
         print("Child Tickets are $5")
     elif age <=18:
@@ -16,8 +16,8 @@ if height >= 120:
         print("Youth Tickets are $7")
     elif age <= 44:
         bill = 12
-        print("Adults Tickets are $12")        # nested-if ended
-    elif age >=45 or age<=55:
+        print("Adults Tickets are $12")
+    elif age >=45 and age<=55:
         bill = 0
         print("Have a free ride on us")
 
@@ -27,4 +27,3 @@ if height >= 120:
     print(f"your final bill is ${bill}")
 else:
     print("Sorry, you have to grow taller before you can ride.")
-
